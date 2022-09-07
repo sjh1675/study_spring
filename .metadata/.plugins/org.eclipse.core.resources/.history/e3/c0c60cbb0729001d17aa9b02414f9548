@@ -1,0 +1,23 @@
+package com.koreate.betty.domain.offline.service;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class OfflineService {
+
+	
+	// 회원이 번호를 골라 체크인한다
+	public int checkIn() {
+		
+		return 0;
+	}
+	
+	// 회원이 체크아웃한다
+	public int checkOut() {
+		
+	}
+	
+}

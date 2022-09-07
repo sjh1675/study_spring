@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;net.koreate.mvc.MavenTest.java&apos; to &apos;DBTest.java&apos;&#x0D;&#x0A;- Original project: &apos;mvc_application_test_management&apos;&#x0D;&#x0A;- Original element: &apos;net.koreate.mvc.MavenTest.java&apos;&#x0D;&#x0A;- Renamed element: &apos;net.koreate.mvc.DBTest.java&apos;" description="Rename compilation unit &apos;MavenTest.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;net.koreate.mvc{MavenTest.java" name="DBTest.java" references="false" stamp="1660876390687" version="1.0"/>
+</session>

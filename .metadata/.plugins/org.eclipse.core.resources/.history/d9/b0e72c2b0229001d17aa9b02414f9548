@@ -1,0 +1,6 @@
+package com.koreate.betty.domain.offline.service;
+
+@Service
+public class OfflineService {
+
+}

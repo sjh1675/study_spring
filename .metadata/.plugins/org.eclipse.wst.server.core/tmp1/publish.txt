@@ -1,0 +1,11 @@
+#Tomcat publish data
+#Wed Aug 10 11:16:10 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\003\\.m2\\repository\\org\\springframework\\spring-web\\5.3.21\\spring-web-5.3.21.jar=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part14_use_member\\WEB-INF\\lib\\spring-web-5.3.21.jar
+org.eclipse.jst.jee.server\:mvc_part07_board=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part07_board
+org.eclipse.jst.jee.server\:mvc_part08_board_java=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part08_board_java
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\003\\.m2\\repository\\org\\springframework\\spring-web\\5.3.22\\spring-web-5.3.22.jar=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part13_interceptor\\WEB-INF\\lib\\spring-web-5.3.22.jar
+org.eclipse.jst.jee.server\:mvc_part11_rest_comment=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part11_rest_comment
+org.eclipse.jst.jee.server\:mvc_part13_interceptor=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part13_interceptor
+org.eclipse.jst.jee.server\:mvc_part10_rest=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part10_rest
+org.eclipse.jst.jee.server\:mvc_part14_use_member=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_part14_use_member
+org.eclipse.jst.jee.server\:mvc_application_test_error=C\:\\Users\\003\\Desktop\\sts\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\mvc_application_test_error

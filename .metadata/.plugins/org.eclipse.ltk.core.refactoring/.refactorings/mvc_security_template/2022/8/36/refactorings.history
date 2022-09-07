@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;net.koreate.sec.service.MemberServiceImple.java&apos; to &apos;MemberServiceImpl.java&apos;&#x0D;&#x0A;- Original project: &apos;mvc_security_template&apos;&#x0D;&#x0A;- Original element: &apos;net.koreate.sec.service.MemberServiceImple.java&apos;&#x0D;&#x0A;- Renamed element: &apos;net.koreate.sec.service.MemberServiceImpl.java&apos;" description="Rename compilation unit &apos;MemberServiceImple.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.koreate.sec.service{MemberServiceImple.java" name="MemberServiceImpl.java" references="false" stamp="1661743415942" version="1.0"/>
+</session>

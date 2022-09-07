@@ -1,0 +1,63 @@
+package com.koreate.betty.domain.offline.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.koreate.betty.domain.book.service.BookService;
+import com.koreate.betty.domain.offline.service.OfflineService;
+import com.koreate.betty.domain.rental.service.RentalService;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Controller
+@RequestMapping("/offline")
+public class OfflineController {
+	
+	@Autowired
+	OfflineService os;
+	
+	@Autowired
+	BookService bs;
+	
+	@Autowired
+	RentalService rs;
+	
+	@GetMapping
+	public void offline(Model model) {
+		model.addAttribute("rentals", null);
+		model.addAttribute("reserves", null);
+	}
+	
+	@PostMapping("receipt")
+	public String rentalRecept(rentalDto rsv) {
+//		String id = rsv.getId();
+//		String code = rsv.getCode();
+//		Integer num = bs.findExistNum(code);
+//		int result = rs.rentalBook(id, code, num);
+		return "redirect:/offline";
+	}
+	
+	
+	@PostMapping("return")
+	public String rentalReturn(rentalDto rental) {
+		log.info("rental = {}",rental);
+		return "redirect:/offline";
+	}
+	
+	// Rental 가져올 곳 많으면 따로 클래스 만들어도됨
+	@Data
+	@NoArgsConstructor
+	static class rentalDto{
+		private String code;
+		private String num;
+		private String id;
+	}
+	
+}

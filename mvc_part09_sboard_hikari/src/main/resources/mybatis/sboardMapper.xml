@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- mybatis/sboardMapper.xml -->
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace에 인터페이스의 위치 지정 -->
+<mapper namespace="net.koreate.sboard.dao.SearchBoardDAO">
+	
+	<insert id="create" parameterType="net.koreate.sboard.vo.SearchBoardVO">
+		INSERT INTO tbl_board(title, content, writer) VALUES(#{title}, #{content}, #{writer})
+	</insert>
+	
+	<!-- 이하의 if문, choose 등은 jstl이 아니고 단지 헷갈리지 마라고 같은 이름으로 사용한 것 -->	
+	<sql id="search">
+		<if test='searchType != null and !searchType.equals("") and searchType != "n"'>
+			<choose>
+				<when test='searchType == "tc"'>
+					WHERE title LIKE CONCAT('%', #{keyword}, '%') 
+					OR content LIKE CONCAT('%', #{keyword}, '%') 
+				</when>
+				<when test='searchType == "cw"'>
+					WHERE content LIKE CONCAT('%', #{keyword}, '%') 
+					OR writer LIKE CONCAT('%', #{keyword}, '%') 
+				</when>
+				<when test='searchType == "tcw"'>
+					WHERE title LIKE CONCAT('%', #{keyword}, '%') 
+					OR content LIKE CONCAT('%', #{keyword}, '%') 
+					OR writer LIKE CONCAT('%', #{keyword}, '%') 
+				</when>
+				<when test='searchType == "title"'>
+					WHERE title LIKE CONCAT('%', #{keyword}, '%') 
+				</when>			
+				<otherwise>
+					WHERE ${searchType} LIKE CONCAT('%', #{keyword}, '%') 
+				</otherwise>
+			</choose>
+		</if>
+	</sql>
+	
+	<!-- List<SearchBoardVO> searchList(SearchCriteria cri) -->
+	<!-- root-context에 typeAliases가 지정되어 있어서 타입을 앞글자를 소문자로 하는 변수명으로 지정할 수 있다 -->
+	<select id="searchList" parameterType="searchCriteria" resultType="searchBoardVO">
+		SELECT * FROM tbl_board 
+		<include refid="search"/>
+		ORDER BY bno DESC limit #{startRow}, #{perPageNum}
+	</select>
+	<!-- parameterType="searchCriteria" 매개변수에서 뺐음 -->
+	<select id="searchListCount" resultType="int">
+		SELECT count(*) FROM tbl_board 
+		<include refid="search"/>
+	</select>
+	
+	<select id="read" parameterType="int" resultType="searchBoardVO">
+		SELECT * FROM tbl_board WHERE bno = #{bno}
+	</select>
+	
+	<update id="update" parameterType="searchBoardVO">
+		UPDATE tbl_board SET title = #{title}, content = #{content}, writer = #{writer} WHERE bno = #{bno}
+	</update>
+	
+	<delete id="remove" parameterType="int">
+		DELETE FROM tbl_board WHERE bno = #{bno}
+	</delete>
+	
+	<update id="updateViewCnt" parameterType="int">
+		UPDATE tbl_board SET viewcnt = viewcnt + 1 WHERE bno = #{bno} 
+	</update>
+</mapper>

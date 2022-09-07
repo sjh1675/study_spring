@@ -1,0 +1,6 @@
+package com.koreate.betty.domain.offline.dao;
+
+@Mapper
+public class OfflineRepository {
+
+}

@@ -1,0 +1,18 @@
+package com.koreate.betty.domain.member.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.koreate.betty.domain.member.dao.MemberRepository;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	MemberRepository memberRepository;
+	
+	public List<MemberForAdminDTO> memberList(){
+		
+	}
+	
+}

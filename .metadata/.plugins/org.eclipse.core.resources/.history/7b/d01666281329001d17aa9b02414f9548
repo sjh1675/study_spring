@@ -1,0 +1,9 @@
+package com.koreate.betty.domain.offline.provider;
+
+public class OfflineProvider {
+	
+	public String checkIn() {
+		
+	}
+	
+}

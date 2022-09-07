@@ -1,0 +1,10 @@
+package com.koreate.betty.domain.offline.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class OfflineService {
+
+	
+	
+}

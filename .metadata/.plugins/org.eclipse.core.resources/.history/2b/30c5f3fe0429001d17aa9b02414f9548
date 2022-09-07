@@ -1,0 +1,16 @@
+package com.koreate.betty.domain.offline.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class OfflineService {
+
+	// 회원이 예약 도서를 수령한다
+	
+	// 회원이 대여 도서를 반납한다
+	
+	// 회원이 번호를 골라 체크인한다
+	
+	// 회원이 체크아웃한다
+	
+}

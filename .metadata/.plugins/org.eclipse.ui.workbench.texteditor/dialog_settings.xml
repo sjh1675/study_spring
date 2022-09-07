@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="alert"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="Mim"/>
+			<item value="alert"/>
+			<item value="amount"/>
+			<item value="table"/>
+			<item value="{user"/>
+			<item value="updateGrade"/>
+			<item value="updateLend"/>
+			<item value="isReal"/>
+			<item value="반납"/>
+			<item value="name"/>
+			<item value="throw"/>
+			<item value="modal"/>
+			<item value="reserv"/>
+			<item value="radio"/>
+			<item value="&lt;form"/>
+		</list>
+		<list key="replacehistory">
+			<item value="initStr"/>
+			<item value="&apos;"/>
+			<item value="\&quot;"/>
+			<item value="ROLE_ADMIN"/>
+			<item value="=&quot;debug&quot;"/>
+			<item value="&quot;"/>
+			<item value="bookList"/>
+			<item value="add"/>
+			<item value=""/>
+			<item value="page"/>
+			<item value="pub"/>
+			<item value="pub_date"/>
+			<item value="auth"/>
+			<item value="code"/>
+			<item value="member"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="8"/>
+		<item key="DIALOG_Y_ORIGIN" value="31"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="383"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.jst.jsp.ui.internal.preferences.ui.JSPTemplatePreferencePage$JSPEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="39"/>
+		<item key="DIALOG_Y_ORIGIN" value="59"/>
+		<item key="DIALOG_WIDTH" value="610"/>
+		<item key="DIALOG_HEIGHT" value="329"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

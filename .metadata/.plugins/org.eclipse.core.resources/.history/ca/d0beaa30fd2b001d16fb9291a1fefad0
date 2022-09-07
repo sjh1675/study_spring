@@ -1,0 +1,39 @@
+package com.koreate.betty.domain.member.dao;
+
+import org.apache.ibatis.annotations.InsertProvider;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.SelectProvider;
+
+import com.koreate.betty.domain.member.provider.SignProvider;
+import com.koreate.betty.domain.member.vo.Member;
+
+@Mapper
+public interface SignRepository {
+
+		@InsertProvider(type=SignProvider.class, method="create")
+		public int create(Member member);
+		
+		@SelectProvider(type=SignProvider.class, method="findIdById")
+		public String findIdById(String id);
+		
+		@SelectProvider(type=SignProvider.class, method="findNicknameByNickname")
+		public String findNicknameByNickname(String nick);
+		
+		@SelectProvider(type=SignProvider.class, method="findEmailByEmail")
+		public String findEmailByEmail(String email);
+		
+		public String findPhoneByPhone(String phone);
+		
+		@SelectProvider(type=SignProvider.class, method="findOneBySignIn")
+		public Member findOneBySignIn(Member member);
+		
+		@SelectProvider(type=SignProvider.class, method="findIdByForget")
+		public String findIdByForget(final String name, final String phone);
+		
+		@SelectProvider(type=SignProvider.class, method="findPwByForget")
+		public int findPwByForget(@Param("id")String id, @Param("phone")String phone);
+
+		
+	
+}

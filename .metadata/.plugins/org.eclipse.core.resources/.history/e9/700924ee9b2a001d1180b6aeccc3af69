@@ -1,0 +1,19 @@
+package com.koreate.betty.domain.member.dto;
+
+import java.util.Date;
+
+import javax.annotation.Nullable;
+import javax.validation.constraints.NotNull;
+
+import com.koreate.betty.domain.member.dto.form.SignUpForm;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class MemberForAdminDTO {
+	
+}

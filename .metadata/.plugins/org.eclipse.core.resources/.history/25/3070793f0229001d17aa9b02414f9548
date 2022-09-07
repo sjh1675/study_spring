@@ -1,0 +1,8 @@
+package com.koreate.betty.domain.offline.provider;
+
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public class OfflineProvider {
+
+}

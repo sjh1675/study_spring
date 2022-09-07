@@ -1,0 +1,33 @@
+package com.koreate.betty.domain.member.service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.koreate.betty.domain.member.dao.MemberRepository;
+import com.koreate.betty.domain.member.dto.MemberForAdminDTO;
+import com.koreate.betty.global.util.Criteria;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	MemberRepository memberRepository;
+	
+	public Map<String, Object> memberList(Integer page){
+		Map<String, Object> map = new HashMap<>();
+		
+		Criteria cri = new Criteria();
+		cri.setPage(page);
+		List<MemberForAdminDTO> oldList = memberRepository.findMemberForAdmin(cri);
+		return oldList;
+	}
+	
+	public boolean blackCheckById(String id) {
+		return memberRepository.blackCheckById(id) == 1 ? true : false;
+	}
+	
+}

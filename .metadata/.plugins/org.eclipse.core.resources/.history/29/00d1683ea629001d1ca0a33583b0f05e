@@ -1,0 +1,5 @@
+package com.koreate.betty.domain.book.exception;
+
+public class NotFoundISBNException {
+
+}

@@ -1,0 +1,14 @@
+package com.koreate.betty.domain.member.dto.form;
+
+import org.springframework.lang.Nullable;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class AdminSearchForm {
+
+}

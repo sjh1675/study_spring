@@ -1,0 +1,10 @@
+package com.koreate.betty.domain.offline.dao;
+
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface OfflineRepository {
+
+	public int checkIn(String id, Integer num);
+
+}

@@ -1,0 +1,35 @@
+package com.koreate.betty.global.controller;
+
+import java.util.Locale;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.koreate.betty.domain.book.service.BookService;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Controller
+@RequestMapping("/")
+@RequiredArgsConstructor
+public class HomeController {
+	
+	private final BookService bs;
+	
+	@GetMapping
+	public String home(Locale locale, Model model) {
+		log.info("locale = {}",locale);
+		model.addAttribute()
+		return "home";
+	}
+	
+	@GetMapping("library")
+	public String welcome() {
+		return "library/library-welcome";
+	}
+	
+}

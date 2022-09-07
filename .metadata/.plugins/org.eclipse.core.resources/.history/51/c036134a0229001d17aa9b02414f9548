@@ -1,0 +1,5 @@
+package com.koreate.betty.domain.offline.dao;
+
+public class OfflineRepository {
+
+}

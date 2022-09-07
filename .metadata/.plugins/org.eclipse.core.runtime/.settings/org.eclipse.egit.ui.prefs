@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>UPDATE pom.properties</message>\r\n<message>Merge branch &apos;main&apos; of https\://github.com/sjh1675/SpringTest.git into&\#x0A;main&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;githubTest/src/main/webapp/WEB-INF/views/test2.jsp&\#x0A;</message>\r\n<message>UPDATE test2.jsp \uCDA9\uB3CC \uD14C\uC2A4\uD2B8</message>\r\n<message>[ADD] Init</message>\r\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

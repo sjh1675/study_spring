@@ -1,0 +1,22 @@
+package com.koreate.betty.domain.member.dto.form;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class AdminSearchForm {
+
+	
+	
+	
+}
+
+
+//가입승인 옵션 all, allow, disallow
+//직원여부 옵션 all, member, staff
+//회원등급 옵션 all, Bronze, Silver, VIP
+//검색 옵션 (all), id, name, addr
+//검색 키워드

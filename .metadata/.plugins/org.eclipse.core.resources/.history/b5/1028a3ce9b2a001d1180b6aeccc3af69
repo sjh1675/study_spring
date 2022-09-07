@@ -1,0 +1,5 @@
+package com.koreate.betty.domain.member.dto.form;
+
+public class MemberForAdminDTO {
+
+}

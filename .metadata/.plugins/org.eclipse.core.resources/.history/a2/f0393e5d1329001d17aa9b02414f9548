@@ -1,0 +1,11 @@
+package com.koreate.betty.domain.offline.provider;
+
+import org.apache.ibatis.annotations.Param;
+
+public class OfflineProvider {
+	
+	public String checkIn(@Param("id")String id, @Param("seat")Integer seat) {
+		
+	}
+	
+}

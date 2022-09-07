@@ -1,0 +1,9 @@
+package net.koreate.common;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"/root-context.xml", "/servlet-context.xml"})
+public class ControllerTest {
+
+	
+	
+}

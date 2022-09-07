@@ -1,0 +1,6 @@
+package com.koreate.betty.domain.offline.provider;
+
+@Mapper
+public class OfflineProvider {
+
+}

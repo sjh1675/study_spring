@@ -1,0 +1,26 @@
+package com.koreate.betty.domain.member.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.koreate.betty.domain.member.dao.MemberRepository;
+import com.koreate.betty.domain.member.dto.MemberForAdminDTO;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	MemberRepository memberRepository;
+	
+	public List<MemberForAdminDTO> memberList(){
+		List<MemberForAdminDTO> oldList = memberRepository.findMemberForAdmin(cri);
+		return oldList;
+	}
+	
+	public boolean blackCheckById(String id) {
+		return memberRepository.blackCheckById(id) == 1 ? true : false;
+	}
+	
+}
